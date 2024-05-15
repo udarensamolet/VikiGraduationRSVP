@@ -8,21 +8,25 @@
   body, html {
     height: 100%;
     margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(250, 218, 219, 0.5); 
+    background-color: rgba(250, 218, 219, 0.5); /* Pink color with 50% opacity */
+    overflow: hidden; /* Prevents scrollbars from appearing */
   }
   .container {
+    width: 100%;
+    max-width: 736px; /* Maximum width of the image */
+    height: auto; /* Adjust height automatically */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 736px; 
-    height: 1063px; 
   }
   img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Make the image width responsive to the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100vh; /* Ensure the image is not taller than the viewport */
   }
 </style>
 </head>
