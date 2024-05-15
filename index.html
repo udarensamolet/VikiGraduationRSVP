@@ -1,76 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style/style-index.css" />
-    <link rel="stylesheet" href="./src/style/responsive.css" />
-    <link rel="icon" type="image/x-icon" href="./src/img/favicon.ico">
-    <title>Вики</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invitation</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(250, 218, 219, 0.5); 
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 736px; 
+    height: 1063px; 
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+</style>
 </head>
-
 <body>
-    <main>
-        <section class="nav">
-            <h1>ПОКАНА</h1>
-            <p class="nav-line"></p>
-            <p class="text-p">Аз, Вики, Ви каня най–сърдечно да отпразнуваме заедно на 26 май 2024г. моя абитуриентски бал.</p>
-            <p class="text-p">Ще Ви очаквам</p>
-            <div class="details-info">
-                <div class="details-info-details"><i class="fa-solid fa-location-dot"></i> хотел Богдана, ул. Иглика, 1444 в.з. Бистрица </div>
-                <div class="details-info-details"><i class="fa-regular fa-calendar-days"></i> 26 май 2024 год. </div>
-                <div class="details-info-details"><i class="fa-regular fa-clock"></i> 13:00 ч.</div>
-            </div>
-            <p class="nav-line"></p>
-            <section id="rsvp">
-                <section class="rsvp-wrapper">
-                    <article>
-                        <h3>RSVP</h3>
-                    </article>
-                    <section class="rsvp-form-wrapper">
-                        <form action="https://api.staticforms.xyz/submit" method="post" id="rsvp-form">
-                            <input type="hidden" name="accessKey" value="528e3448-979f-420b-b41a-a96b6ba9fc19"/>
-    
-                            <div class="rsvp-form-firstName">
-                                <label for="$firstName">Име</label>
-                                <input type="text" name="$firstName" required placeholder="Твоето име" />
-                            </div>
-    
-                            <div class="rsvp-form-attending">
-                                <div class="rsvp-form-attending-outer-group">
-                                    <div class="rsvp-form-attending-inner-group">
-                                        <input type="radio" id="yes" name="$attending" value="Yes" />
-                                        <label for="$attending-Yes">Приемам</label>
-                                    </div>
-                                    <div class="rsvp-form-attending-inner-group">
-                                        <input type="radio" id="no" name="$attending" value="No" />
-                                        <label for="$attending-No">Отказвам</label>
-                                    </div>
-                                </div>
-                            </div>
-    
-    
-    
-                            <div class="rsvp-btns">
-                                <input type="submit" value="ИЗПРАЩАНЕ" onclick="alert('Благодаря!')"/>
-                                <input type="hidden" name="redirectTo" value="https://viki-bday.netlify.app/">
-                                <button onclick="reset()" id="clearForm">ИЗЧИСТИ</button>
-                            </div>
-                        </form>
-                    </section>
-                </section>
-            </section>
-        </section>
-
-       
-
-    </main>
-
-  <footer>
-        <p>made with <i class="fa-regular fa-heart"></i> by Vicky
-    </footer>   
+<div class="container">
+  <img src="Viki.png" alt="Invitation">
+</div>
 </body>
-
 </html>
